@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"lib": ["ES2017.String", "ESNext", "DOM", "ES2015", "DOM.Iterable"],
+		"moduleResolution": "Node",
+		"sourceMap": true,
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"strict": false,
+		"noEmitOnError": true,
+		"downlevelIteration": true,
+		"strictFunctionTypes": true,
+		"baseUrl": ".",
+		"types": ["node"],
+		"paths": {
+			"$": ["src", "src/"],
+			"$/*": ["src/*"]
+		}
+	},
+	"include": ["./**/*.ts"],
+	"exclude": ["node_modules", "**/node_modules/*"]
+}

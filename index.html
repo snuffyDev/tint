@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/src/style.css" />
+		<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+		''
+
+		<title>Vite App</title>
+	</head>
+	<body>
+		<div id="app">
+			<main class="container">
+				<h1>TINT</h1>
+				<article class="">
+					<header>Receiver</header>
+					<p>Messages in queue: <span id="counter">0</span></p>
+					<p id="recv">State: </p>
+					<button role="button" href="#" id="close">Close!</button>
+				</article>
+				<ol
+					id="logs"
+					style="
+						max-height: 24rem;
+						overflow-y: auto;
+						font-family: monospace;
+						background: #4e4f553b;
+						display: flex;
+						flex-direction: column;
+						font-size: 1em;
+						border-radius: 0.6em;
+						padding: 0.5em 2.5em;
+						position: relative;
+						color: #fefefe;
+						margin-block: 0.3em;
+					"
+				></ol>
+				<section class="container" id="senders"></section>
+				<button role="button" class="block" href="#" id="add">Add new Sender</button>
+			</main>
+		</div>
+		<!-- <script type="module" src="/src/main.ts"></script> -->
+		<style>
+			li {
+				margin: 0;
+				/* padding: 0.5em 1em; */
+			}
+		</style>
+		<script type="module" src="/index.ts"></script>
+	</body>
+</html>

@@ -1,0 +1,9 @@
+export { filter } from './filter';
+export { filterMap } from './filterMap';
+export { findAll } from './findAll';
+export { findFirst } from './findFirst';
+export { findLast } from './findLast';
+export { forEach } from './forEach';
+export { map } from './map';
+export { reduce } from './reduce';
+export { splice } from './splice';
